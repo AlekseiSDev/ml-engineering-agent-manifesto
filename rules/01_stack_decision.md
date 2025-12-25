@@ -24,12 +24,17 @@
 - Primary: **ClearML**.
   - If `clearml.conf` is missing, ask the user to run `clearml-init` or to use
     offline/local server mode.
-- If ClearML is forbidden: use W&B.
+- If ClearML is forbidden: use W&B and enable dataset tracking via Artifacts.
+- If the repo already uses a tracker (ClearML/W&B/MLflow), keep it unless the
+  user asks to migrate.
 
 ## Config Management
 - Default: Pydantic Settings for lightweight configs.
 - For large or multi-environment projects: consider Hydra.
 
 ## Data Versioning
-- If datasets > 1GB or multi-stage pipelines: suggest DVC.
-- Otherwise: use ClearML Data or track dataset artifacts in storage.
+- Default: use ClearML Data for datasets of any size.
+- If the user wants git-like data versioning or pipeline-style workflows: use
+  DVC (with S3/GS/Azure remotes).
+- If W&B is chosen: W&B Artifacts can be used for lightweight lineage, but do
+  not replace ClearML Data or DVC as the primary dataset versioning system.

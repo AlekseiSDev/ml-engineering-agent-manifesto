@@ -11,7 +11,10 @@ Hard Rules:
 4. Docstrings: all public modules/classes/functions must have Google-style
    docstrings.
 5. Tracking: all training runs must initialize ClearML and log metrics there.
-6. Avoid tool sprawl: do not add new tools without explicit user approval.
+6. Data tracking: use ClearML Data by default. If the user wants git-like data
+   versioning/pipelines, use DVC. If W&B is selected, use Artifacts only for
+   lightweight lineage, not as the primary dataset versioning system.
+7. Avoid tool sprawl: do not add new tools without explicit user approval.
 
 Behavior for Existing Code:
 - Start with an audit and present a short change plan before editing files.

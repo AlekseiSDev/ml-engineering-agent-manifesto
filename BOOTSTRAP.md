@@ -10,6 +10,8 @@ structure, tooling, and governance.
 - Prefer a minimal toolset; avoid tool sprawl.
 - For existing repos, do not remove or replace tools without confirmation.
 - Keep changes reversible and well scoped.
+- If no conflicts are found, pick sensible defaults and proceed without a
+  guided install flow.
 
 ## Phase 1: Discovery
 1. Inventory key files: `pyproject.toml`, `requirements.txt`, `environment.yml`,
@@ -48,6 +50,8 @@ structure, tooling, and governance.
 2. Add ClearML integration stubs from `templates/tracker_clearml.py`.
 3. If credentials are missing, ask the user to run `clearml-init` or provide
    tokens.
+4. For dataset tracking, default to ClearML Data unless W&B is selected, then
+   use W&B Artifacts.
 
 ## Phase 6: Governance (Persistence)
 1. Create `.cursorrules`, `CLAUDE.md`, and `.github/copilot-instructions.md`

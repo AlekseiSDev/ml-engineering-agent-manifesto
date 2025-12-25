@@ -15,3 +15,5 @@
 - Present a short plan before making changes.
 - Apply changes incrementally to keep the repo runnable.
 - Do not remove existing tools without explicit approval.
+- If tracking already exists (W&B/MLflow/ClearML), keep it and integrate with
+  its dataset/versioning mechanism.

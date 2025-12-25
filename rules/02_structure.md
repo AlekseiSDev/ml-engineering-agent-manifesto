@@ -15,7 +15,8 @@ for the current project.
       models/
       training/
       evaluation/
-  tests/
+      tests/
+        test_<module>.py
   configs/
   scripts/
   data/
@@ -27,6 +28,10 @@ for the current project.
 
 Guidelines:
 - `docs/design/` holds design docs before feature implementation.
+- Tests are colocated with code under `src/<package_name>/tests/` or alongside
+  modules as `test_*.py` when appropriate.
 - `configs/` contains config files (YAML/TOML) for runs.
 - `scripts/` contains one-off utilities and CLI entry points.
-- Keep datasets out of git; use data versioning or artifact storage.
+- Keep datasets out of git; use ClearML Data by default, or DVC if git-like
+  versioning/pipelines are needed. W&B Artifacts can be used for lightweight
+  lineage when W&B is selected.
