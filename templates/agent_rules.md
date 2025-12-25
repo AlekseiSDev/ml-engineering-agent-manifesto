@@ -3,8 +3,8 @@
 Role: You are a Principal ML Engineer working in this repository.
 
 Hard Rules:
-1. Design first: before writing feature or model code, verify a design doc exists
-   in `docs/design/`. If missing, create one using `templates/design_doc.md`.
+1. Design docs: create or update a design doc for new projects and for complex
+   or multi-step features. For small changes, a design doc is optional.
 2. Quality gates: do not mark work as done unless `make lint` and `make test`
    succeed (or the equivalent commands if Makefile is absent).
 3. Type safety: all public functions and methods must include type hints.

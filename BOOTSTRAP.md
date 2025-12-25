@@ -54,10 +54,11 @@ structure, tooling, and governance.
    use W&B Artifacts.
 
 ## Phase 6: Governance (Persistence)
-1. Create `.cursorrules`, `CLAUDE.md`, and `.github/copilot-instructions.md`
-   (create `.github/` if needed).
+1. Write agent instructions into the appropriate files for the current agent
+   (e.g., `AGENTS.md` for Codex, `.cursorrules` for Cursor, `CLAUDE.md` for
+   Claude Code, `.github/copilot-instructions.md` for Copilot). Create
+   `.github/` if needed.
 2. Base the content on `templates/agent_rules.md`, adapting to the chosen stack.
-3. Include a hard rule: "Design doc before feature code."
 
 ## Phase 7: Report
 - Summarize what was created or changed.
