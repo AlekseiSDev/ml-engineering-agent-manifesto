@@ -10,10 +10,19 @@ AI agent reads and follows to set up tooling, structure, and guardrails.
    file if this repo is hosted remotely.
 3. Ask the agent to execute the protocol end-to-end.
 
-Example prompt:
-"Act as a Principal ML Engineer. Read and apply the protocol at BOOTSTRAP.md in
-this repo. Analyze the current directory, select tools, set up infrastructure,
-and write agent rules for this project."
+Example prompts:
+
+1) Standard execution
+"Act as a Principal ML Engineer. Read and follow the protocol at
+https://github.com/AlekseiSDev/ml-engineering-agent-manifesto/blob/master/BOOTSTRAP.md.
+Apply it end-to-end in the current repository: analyze the codebase, select the
+stack, scaffold the structure, set up tooling, and persist agent rules."
+
+2) Silent mode (minimize questions)
+"Act as a Principal ML Engineer. Read and follow the protocol at
+https://github.com/AlekseiSDev/ml-engineering-agent-manifesto/blob/master/BOOTSTRAP.md.
+Execute it end-to-end with minimal interruptions. Only ask questions when a
+decision is blocking; otherwise pick default options and proceed."
 
 ## What the agent should do
 - Decide the stack using `rules/01_stack_decision.md`
