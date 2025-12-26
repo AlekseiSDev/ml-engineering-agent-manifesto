@@ -5,7 +5,7 @@
 - Log hyperparameters and metrics through the ClearML logger.
 - Store model artifacts in ClearML model registry when applicable.
 - Use the template from `templates/tracker_clearml.py`.
- - Track datasets using ClearML Data (supports S3/GS/Azure backends).
+- Track datasets using ClearML Data (supports S3/GS/Azure backends).
 
 ## Credentials and Setup
 - If `clearml.conf` is missing, ask the user to run `clearml-init`.

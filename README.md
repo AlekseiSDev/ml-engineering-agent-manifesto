@@ -30,7 +30,7 @@ decision is blocking; otherwise pick default options and proceed."
 - Enforce quality gates from `rules/03_quality.md`
 - Add observability and experiment tracking from `rules/04_observability.md`
 - For existing repositories, follow `rules/05_brownfield.md`
-- Persist the rules into `.cursorrules`, `CLAUDE.md`, and
+- Persist the rules into `AGENTS.md`, `.cursorrules`, `CLAUDE.md`, and
   `.github/copilot-instructions.md`
 
 ## Repository layout

@@ -47,9 +47,12 @@ structure, tooling, and governance.
 
 ## Phase 5: Observability
 1. Read `rules/04_observability.md`.
-2. Add ClearML integration stubs from `templates/tracker_clearml.py`.
-3. If credentials are missing, ask the user to run `clearml-init` or provide
-   tokens.
+2. Add tracker integration scaffolding that matches the chosen tool.
+   - If ClearML is selected: use `templates/tracker_clearml.py`.
+   - If an existing tracker is already in use: keep it and do not add ClearML
+     files.
+3. If ClearML is selected and credentials are missing, ask the user to run
+   `clearml-init` or provide tokens.
 4. For dataset tracking, default to ClearML Data unless W&B is selected, then
    use W&B Artifacts.
 
