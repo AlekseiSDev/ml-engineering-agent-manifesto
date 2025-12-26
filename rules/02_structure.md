@@ -28,6 +28,7 @@ for the current project.
 
 Guidelines:
 - `docs/design/` holds design docs before feature implementation.
+- `src/<package_name>/config.py` uses Pydantic Settings (see `templates/config.py`).
 - Tests are colocated with code under `src/<package_name>/tests/` or alongside
   modules as `test_*.py` when appropriate.
 - `configs/` contains config files (YAML/TOML) for runs.

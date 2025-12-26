@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+env/
+build/
+dist/
+*.egg-info/
+
+# ML / Data (Crucial)
+data/
+models/
+outputs/
+checkpoints/
+*.h5
+*.pth
+*.onnx
+*.pb
+mlruns/
+.clearml/
+wandb/
+
+# IDEs & Tools
+.vscode/
+.idea/
+.ipynb_checkpoints
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.env
+
+# OS
+.DS_Store
+Thumbs.db

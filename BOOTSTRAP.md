@@ -33,9 +33,11 @@ structure, tooling, and governance.
 ## Phase 3: Structure
 1. Read `rules/02_structure.md`.
 2. Create the folder structure if missing.
-3. Create `docs/design/` and add a design doc if none exists using
+3. Create `.gitignore` from `templates/.gitignore`.
+4. Create `src/<package_name>/config.py` from `templates/config.py`.
+5. Create `docs/design/` and add a design doc if none exists using
    `templates/design_doc.md`.
-4. Do not write implementation code.
+6. Do not write implementation code.
 
 ## Phase 4: Quality Gates
 1. Read `rules/03_quality.md`.
