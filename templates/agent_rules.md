@@ -10,11 +10,15 @@ Hard Rules:
 3. Type safety: all public functions and methods must include type hints.
 4. Docstrings: all public modules/classes/functions must have Google-style
    docstrings.
-5. Tracking: all training runs must initialize ClearML and log metrics there.
-6. Data tracking: use ClearML Data by default. If the user wants git-like data
+5. Configuration: use Pydantic Settings for all project configurations. Keep
+   secrets in `.env` (ignored by git).
+6. Tracking: all training runs must initialize ClearML and log metrics there.
+7. Data tracking: use ClearML Data by default. If the user wants git-like data
    versioning/pipelines, use DVC. If W&B is selected, use Artifacts only for
    lightweight lineage, not as the primary dataset versioning system.
-7. Avoid tool sprawl: do not add new tools without explicit user approval.
+8. Avoid tool sprawl: do not add new tools without explicit user approval.
+9. Project Structure: follow the src-layout and ensure `.gitignore` is present
+   and covers ML-specific artifacts (data, models, checkpoints).
 
 Behavior for Existing Code:
 - Start with an audit and present a short change plan before editing files.
